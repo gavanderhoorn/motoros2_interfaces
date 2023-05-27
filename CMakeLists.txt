@@ -18,6 +18,7 @@ set(msg_files
 )
 
 set(srv_files
+  srv/GetPositionFK.srv
   srv/QueueTrajPoint.srv
   srv/ReadMRegister.srv
   srv/ReadSingleIO.srv

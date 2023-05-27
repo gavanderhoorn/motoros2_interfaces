@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2022-2023, Yaskawa America, Inc.
+# SPDX-FileCopyrightText: 2022-2023, Delft University of Technology
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# NOTE: this field is 0-based, with 0 corresponding to the first motion group,
+#       1 the second, etc.
+#
+# legal-values: [0, total_nr_of_groups)
+# required: yes (absence-causes-service-failure)
+# default: no-default
+uint8 group_no
+
+# MUST be in motoman order (for now)
+float64[8] joint_angles
+
+uint16 tool_no
+
+---
+
+bool success
+uint32 result_code
+string message
+
+# NOTE: if 'success == false', result may not be initialized
+geometry_msgs/PoseStamped result
