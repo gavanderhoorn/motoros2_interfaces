@@ -32,9 +32,11 @@ set(srv_files
   srv/ReadGroupIO.srv
   srv/ResetError.srv
   srv/RetrieveJob.srv
+  srv/RunJob.srv
   srv/SelectMotionTool.srv
   srv/StartTrajMode.srv
   srv/StartPointQueueMode.srv
+  srv/StopJob.srv
   srv/UpdateJob.srv
   srv/WriteMRegister.srv
   srv/WriteSingleIO.srv
