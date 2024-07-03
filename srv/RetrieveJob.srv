@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2024, Yaskawa America, Inc.
+# SPDX-FileCopyrightText: 2024, Delft University of Technology
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# no extension
+string name
+
+---
+
+# Result of the service invocation. Values other than one (1) signal failure.
+#
+# NOTE: future versions of this service may use a different set of result codes
+int32 result_code
+
+# string representation of the value in 'result_code', for humans
+string message
+
+# this field may be left uninitialised in case result_code != 1
+string content

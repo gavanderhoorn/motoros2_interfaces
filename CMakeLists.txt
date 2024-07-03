@@ -22,15 +22,20 @@ set(msg_files
 )
 
 set(srv_files
+  srv/CreateJob.srv
+  srv/DeleteJob.srv
   srv/GetActiveAlarmInfo.srv
+  srv/ListJobs.srv
   srv/QueueTrajPoint.srv
   srv/ReadMRegister.srv
   srv/ReadSingleIO.srv
   srv/ReadGroupIO.srv
   srv/ResetError.srv
+  srv/RetrieveJob.srv
   srv/SelectMotionTool.srv
   srv/StartTrajMode.srv
   srv/StartPointQueueMode.srv
+  srv/UpdateJob.srv
   srv/WriteMRegister.srv
   srv/WriteSingleIO.srv
   srv/WriteGroupIO.srv

@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2024, Yaskawa America, Inc.
+# SPDX-FileCopyrightText: 2024, Delft University of Technology
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# notes:
+# - can't already exist
+# - do NOT include the file extension here (ie: '.JBI'). Only the name of the
+#   job should be specified.
+string name
+
+# complete job file (ie: JBI) contents, including job header
+#
+# note: use Windows EOLs
+string content
+
+---
+
+# Result of the service invocation. Values other than one (1) signal failure.
+#
+# NOTE: future versions of this service may use a different set of result codes
+int32 result_code
+
+# string representation of the value in 'result_code', for humans
+string message
