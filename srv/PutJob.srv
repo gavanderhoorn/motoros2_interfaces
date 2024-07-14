@@ -19,7 +19,7 @@ string contents
 # Result of the service invocation. Values other than one (1) signal failure.
 #
 # NOTE: future versions of this service may use a different set of result codes
-int32 result_code
+uint32 result_code
 
 # string representation of the value in 'result_code', for humans
 string message
