@@ -7,6 +7,19 @@
 
 ---
 
+# defined result codes and strings
+uint32 RC_OK=1
+string STR_OK="Success"
+
+uint32 RC_ERR_GET_ALARM_CODE_API=10
+string STR_ERR_GET_ALARM_CODE_API="Could not retrieve alarm data (M+ API failure)"
+
+uint32 RC_ERR_RETRIEVING_ALARM_INFO=15
+string STR_ERR_RETRIEVING_ALARM_INFO="Could not retrieve alarm info"
+
+uint32 RC_ERR_RETRIEVING_ERROR_INFO=20
+string STR_ERR_RETRIEVING_ERROR_INFO="Could not retrieve error info"
+
 # Result of the service invocation. Values other than one (1) signal failure.
 #
 # NOTE: future versions of this service may use a different set of result codes
