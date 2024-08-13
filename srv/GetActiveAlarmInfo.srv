@@ -7,6 +7,19 @@
 
 ---
 
+# Result codes and corresponding result message constants
+uint32 RC_OK=1
+string STR_OK="Success"
+
+uint32 RC_ERR_RETRIEVING_ALARM_DATA=10
+string STR_ERR_RETRIEVING_ALARM_DATA="Error retrieving list of active alarms & errors"
+
+uint32 RC_ERR_RETRIEVING_ALARM_INFO=11
+string STR_ERR_RETRIEVING_ALARM_INFO="Error retrieving alarm info"
+
+uint32 RC_ERR_RETRIEVING_ERROR_INFO=12
+string STR_ERR_RETRIEVING_ERROR_INFO="Error retrieving error info"
+
 # Result of the service invocation. Values other than one (1) signal failure.
 #
 # NOTE: future versions of this service may use a different set of result codes
